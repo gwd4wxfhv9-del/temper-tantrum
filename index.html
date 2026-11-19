@@ -822,15 +822,23 @@ html[data-theme="dark"] .note-block {
     }
 
     /* Увеличиваем изображение */
+@media (max-width: 768px) {
     #blogPicture {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: 0;
+        height: 360px;
         overflow: hidden;
     }
 
     #blogPicture img {
+        display: block;
         width: 100%;
-        height: auto;
-        transform: scale(1.12);
-        transform-origin: center top;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: none;
     }
 }
 </style>
