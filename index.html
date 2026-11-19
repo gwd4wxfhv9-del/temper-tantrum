@@ -799,6 +799,40 @@ html[data-theme="dark"] .note-block {
         box-shadow: none;
     }
 }
+    /* Общие настройки */
+.note-block h1::after,
+.note-block h2::after {
+    height: 1px; /* тонкая полоска под заголовком */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    /* Убираем закругления */
+    .note-block,
+    .note-content,
+    #blogPicture,
+    #blogPicture img {
+        border-radius: 0 !important;
+    }
+
+    /* Убираем подложку и тень за блоком */
+    .note-block {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /* Увеличиваем изображение */
+    #blogPicture {
+        overflow: hidden;
+    }
+
+    #blogPicture img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.12);
+        transform-origin: center top;
+    }
+}
 </style>
 </head>
 
