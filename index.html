@@ -841,6 +841,27 @@ html[data-theme="dark"] .note-block {
         transform: none;
     }
 }
+@media (max-width: 768px) {
+    html,
+    body {
+        background: inherit !important;
+    }
+
+    header,
+    .header,
+    .note-block,
+    .note-content,
+    footer {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .note-block {
+        margin: 0 !important;
+    }
+}
 </style>
 </head>
 
